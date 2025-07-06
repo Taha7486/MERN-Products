@@ -13,8 +13,8 @@ app.use(cors());
 app.use(express.json()); 
 
 app.listen(Port, () => {
-    connectDB();
     console.log(`🚀 Server running on http://localhost:${Port}`);
+    connectDB();
   });
 
 app.use('/api/auth', authRoutes);
